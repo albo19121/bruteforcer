@@ -1,5 +1,5 @@
 file_name = input("Enter the name you want to give to document: ")
-file = open(f'C:\\Users\\geri\\Desktop\\Hacking\\{file_name}.txt', 'a')
+file = open(f'/root/{file_name}.txt', 'a')
 info = (input("ENTER INFORMATION (separate words and names by ','): "))
 keywords = info.split(',')
 ask_sym = input("Enter symbols you want to add (separate symbols by ',') or type d for default: ").lower()
@@ -13,7 +13,7 @@ added_num = ''
 count = 0
 for word in keywords:
     name = word
-    for number in range(0, 3000):
+    for number in range(0, 99000):
         added_num = number
         product = f"{name}{added_num}\n"
         cap_prod = f"{name.capitalize()}{added_num}\n"
